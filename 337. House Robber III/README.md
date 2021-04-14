@@ -37,7 +37,11 @@ Explanation: Maximum amount of money the thief can rob = 4 + 5 = 9.
 
 ## Answer
 
-(待補齊)
+本題包含兩種情況：`搶劫當前節點層` 或 `跳過當前節點層`
+
+`搶劫當前節點層`：子節點層的左右都不計算
+
+`跳過當前節點層`：是否要搶劫左邊子節點層 + 是否要搶劫左邊子節點層 (不一定要搶子節點層，搶了不一定有較好結果)
 
 ```python
 class Solution:

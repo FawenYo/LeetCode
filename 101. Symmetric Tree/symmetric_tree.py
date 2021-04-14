@@ -9,6 +9,7 @@ class TreeNode:
         self.right = right
 
 
+# Recursive method
 class Solution:
     def isSymmetric(self, root: TreeNode) -> bool:
         if not root:

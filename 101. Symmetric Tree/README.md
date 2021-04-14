@@ -33,17 +33,14 @@ Output: false
 
 ## Answer
 
-(待補齊)
+Iteration (迭代): 迴圈重複執行
+
+Recursive (遞迴): 重複呼叫 function
+
+此處使用遞迴方式，檢查左右是否相同
 
 ```python
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
-
+# Recursive method
 class Solution:
     def isSymmetric(self, root: TreeNode) -> bool:
         if not root:
