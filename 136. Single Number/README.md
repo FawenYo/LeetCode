@@ -2,37 +2,36 @@
 
 ## Question
 
-Given a **non-empty** array of integers `nums`, every element appears twice except for one. Find that single one.
+Given a __non-empty__&nbsp;array of integers `` nums ``, every element appears _twice_ except for one. Find that single one.
 
-**Follow up**: Could you implement a solution with a linear runtime complexity and without using extra memory?
+__Follow up:__&nbsp;Could you implement a solution with a linear runtime complexity and without using extra memory?
 
-## Examples
+&nbsp;
 
-### Example 1:
+__Example 1:__
 
-```shell
-Input: nums = [2,2,1]
-Output: 1
-```
+<pre><strong>Input:</strong> nums = [2,2,1]
+<strong>Output:</strong> 1
+</pre>
 
-### Example 2:
+__Example 2:__
 
-```shell
-Input: nums = [4,1,2,1,2]
-Output: 4
-```
+<pre><strong>Input:</strong> nums = [4,1,2,1,2]
+<strong>Output:</strong> 4
+</pre>
 
-### Example 3:
+__Example 3:__
 
-```shell
-Input: nums = [1]
-Output: 1
-```
+<pre><strong>Input:</strong> nums = [1]
+<strong>Output:</strong> 1
+</pre>
 
-## Constraints:
+&nbsp;
 
-* $1 \leq nums.length \leq 3 * 10^4$.
-* $-3 *10^4 \leq nums[i] leq 3* 10^4$
+__Constraints:__
+
+* <code>1 &lt;= nums.length &lt;= 3 * 10<sup>4</sup></code>
+* <code>-3 * 10<sup>4</sup> &lt;= nums[i] &lt;= 3 * 10<sup>4</sup></code>
 * Each element in the array appears twice except for one element which appears only once.
 
 ## Answer

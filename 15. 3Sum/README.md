@@ -2,37 +2,36 @@
 
 ## Question
 
-Given an integer array nums, return all the triplets `[nums[i], nums[j], nums[k]]` such that `i != j`, `i != k`, and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`.
+Given an integer array nums, return all the triplets `` [nums[i], nums[j], nums[k]] `` such that `` i != j ``, `` i != k ``, and `` j != k ``, and `` nums[i] + nums[j] + nums[k] == 0 ``.
 
 Notice that the solution set must not contain duplicate triplets.
 
-## Examples
+&nbsp;
 
-### Example 1:
+__Example 1:__
 
-```shell
-Input: nums = [-1,0,1,2,-1,-4]
-Output: [[-1,-1,2],[-1,0,1]]
-```
+<pre><strong>Input:</strong> nums = [-1,0,1,2,-1,-4]
+<strong>Output:</strong> [[-1,-1,2],[-1,0,1]]
+</pre>
 
-### Example 2:
+__Example 2:__
 
-```shell
-Input: nums = []
-Output: []
-```
+<pre><strong>Input:</strong> nums = []
+<strong>Output:</strong> []
+</pre>
 
-### Example 3:
+__Example 3:__
 
-```shell
-Input: nums = [0]
-Output: []
-```
+<pre><strong>Input:</strong> nums = [0]
+<strong>Output:</strong> []
+</pre>
 
-## Constraints:
+&nbsp;
 
-* $0 \leq nums.length \leq 3000$
-* $-10^5 <= nums[i] <= 10^5$
+__Constraints:__
+
+* <code> 0 &lt;= nums.length &lt;= 3000 </code>
+* <code>-10<sup>5</sup> &lt;= nums[i] &lt;= 10<sup>5</sup></code>
 
 ## Answer
 

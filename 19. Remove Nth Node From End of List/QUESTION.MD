@@ -39,26 +39,3 @@ __Constraints:__
 * <code> 1 &lt;= sz &lt;= 30 </code>
 * <code> 0 &lt;= Node.val &lt;= 100 </code>
 * <code> 1 &lt;= n &lt;= sz </code>
-
-## Answer
-
-分別建立 `before` 和 `after` 兩個ListNode，`after`先跑n步，當`after`跑到底的時候，`before.next`就是要移除的Node。
-
-```python
-class Solution:
-    def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
-        after = before = head
-        # After = start from nth
-        for _ in range(n):
-            after = after.next
-        if not after:
-            return head.next
-        # Got last nth when after ended
-        while after.next:
-            after = after.next
-            before = before.next
-
-        before.next = before.next.next
-        return head
-
-```

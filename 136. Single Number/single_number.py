@@ -1,4 +1,7 @@
-from typing import List
+import sys
+
+sys.path.append(".")
+from model import *
 
 
 # Simple method

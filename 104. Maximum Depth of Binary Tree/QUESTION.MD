@@ -44,20 +44,3 @@ __Constraints:__
 
 * The number of nodes in the tree is in the range <code>[0, 10<sup>4</sup>]</code>.
 * <code> -100 &lt;= Node.val &lt;= 100 </code>
-
-## Answer
-
-比較左右的深度，並加上當前節點層
-
-```python
-class Solution:
-    def maxDepth(self, root: TreeNode) -> int:
-        if root:
-            # +1 for current node
-            return (
-                max(self.maxDepth(root=root.left), self.maxDepth(root=root.right)) + 1
-            )
-        else:
-            return 0
-
-```

@@ -1,10 +1,7 @@
-from typing import List
+import sys
 
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+sys.path.append(".")
+from model import *
 
 
 class Solution:
@@ -25,23 +22,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    # Convert List to ListNode
-    def list_to_listnode(target: List[int]) -> ListNode:
-        result = current_node = ListNode()
-        for each in target:
-            current_node.next = ListNode(val=each)
-            current_node = current_node.next
-        return result.next
-
-    # Convert ListNode to List
-    def listnode_to_list(listnode: ListNode) -> List[int]:
-        result = []
-        while listnode.next:
-            result.append(listnode.val)
-            listnode = listnode.next
-        result.append(listnode.val)
-        return result
-
     head = list_to_listnode(target=[1, 2, 3, 4, 5])
     n = 2
     answer = Solution().removeNthFromEnd(head=head, n=n)
