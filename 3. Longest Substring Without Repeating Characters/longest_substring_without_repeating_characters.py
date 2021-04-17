@@ -1,3 +1,9 @@
+import sys
+
+sys.path.append(".")
+from model import *
+
+
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         used_characters = {}

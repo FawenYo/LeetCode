@@ -1,3 +1,9 @@
+import sys
+
+sys.path.append(".")
+from model import *
+
+
 # Simple version
 class Solution:
     def longestPalindrome(self, s: str) -> str:

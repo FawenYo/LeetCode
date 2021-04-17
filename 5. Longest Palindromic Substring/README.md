@@ -2,43 +2,45 @@
 
 ## Question
 
-Given a string `s`, return the longest palindromic substring in `s`.
+Given a string `` s ``, return&nbsp;_the longest palindromic substring_ in `` s ``.
 
-## Examples
+&nbsp;
 
-### Example 1:
+__Example 1:__
 
-```shell
-Input: s = "babad"
-Output: "bab"
-Note: "aba" is also a valid answer.
-```
+<pre>
+<strong>Input:</strong> s = "babad"
+<strong>Output:</strong> "bab"
+<strong>Note:</strong> "aba" is also a valid answer.
+</pre>
 
-### Example 2:
+__Example 2:__
 
-```shell
-Input: s = "cbbd"
-Output: "bb"
-```
+<pre>
+<strong>Input:</strong> s = "cbbd"
+<strong>Output:</strong> "bb"
+</pre>
 
-### Example 3:
+__Example 3:__
 
-```shell
-Input: s = "a"
-Output: "a"
-```
+<pre>
+<strong>Input:</strong> s = "a"
+<strong>Output:</strong> "a"
+</pre>
 
-### Example 4:
+__Example 4:__
 
-```shell
-Input: s = "ac"
-Output: "a"
-```
+<pre>
+<strong>Input:</strong> s = "ac"
+<strong>Output:</strong> "a"
+</pre>
 
-## Constraints
+&nbsp;
 
-* $1 \leq s.length \leq 1000$
-* $s$ consist of only digits and English letters (lower-case and/or upper-case).
+__Constraints:__
+
+* <code> 1 &lt;= s.length &lt;= 1000 </code>
+* `` s `` consist of only digits and English letters (lower-case and/or upper-case),
 
 ## Answer
 

@@ -36,26 +36,3 @@ __Constraints:__
 * The number of nodes in both lists is in the range `` [0, 50] ``.
 * <code> -100 &lt;= Node.val &lt;= 100 </code>
 * Both `` l1 `` and `` l2 `` are sorted in __non-decreasing__ order.
-
-## Answer
-
-本題為練習ListNode操作，直接比較 `l1`, `l2` 的值即可
-
-若其中一個跑完了，`current_node.next = l1 or l2`
-
-```python
-class Solution:
-    def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
-        result = current_node = ListNode()
-        while l1 and l2:
-            if l1.val < l2.val:
-                current_node.next = l1
-                l1 = l1.next
-            else:
-                current_node.next = l2
-                l2 = l2.next
-            current_node = current_node.next
-        current_node.next = l1 or l2
-        return result.next
-
-```

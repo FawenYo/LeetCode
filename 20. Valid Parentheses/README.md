@@ -2,54 +2,56 @@
 
 ## Question
 
-Given a string s containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.
+Given a string `` s `` containing just the characters `` '(' ``, `` ')' ``, `` '{' ``, `` '}' ``, `` '[' `` and `` ']' ``, determine if the input string is valid.
 
 An input string is valid if:
 
 1. Open brackets must be closed by the same type of brackets.
 2. Open brackets must be closed in the correct order.
 
-## Examples
+&nbsp;
 
-### Example 1:
+__Example 1:__
 
-```shell
-Input: s = "()"
-Output: true
-```
+<pre>
+<strong>Input:</strong> s = "()"
+<strong>Output:</strong> true
+</pre>
 
-### Example 2:
+__Example 2:__
 
-```shell
-Input: s = "()[]{}"
-Output: true
-```
+<pre>
+<strong>Input:</strong> s = "()[]{}"
+<strong>Output:</strong> true
+</pre>
 
-### Example 3:
+__Example 3:__
 
-```shell
-Input: s = "(]"
-Output: false
-```
+<pre>
+<strong>Input:</strong> s = "(]"
+<strong>Output:</strong> false
+</pre>
 
-### Example 4:
+__Example 4:__
 
-```shell
-Input: s = "([)]"
-Output: false
-```
+<pre>
+<strong>Input:</strong> s = "([)]"
+<strong>Output:</strong> false
+</pre>
 
-### Example 5:
+__Example 5:__
 
-```shell
-Input: s = "{[]}"
-Output: true
-```
+<pre>
+<strong>Input:</strong> s = "{[]}"
+<strong>Output:</strong> true
+</pre>
 
-## Constraints:
+&nbsp;
 
-* $1 \leq s.length \leq 10^4$
-* `s` consists of parentheses only `'()[]{}'`.
+__Constraints:__
+
+* <code>1 &lt;= s.length &lt;= 10<sup>4</sup></code>
+* `` s `` consists of parentheses only `` '()[]{}' ``.
 
 ## Answer
 

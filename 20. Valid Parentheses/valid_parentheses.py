@@ -1,3 +1,9 @@
+import sys
+
+sys.path.append(".")
+from model import *
+
+
 # Solution 1
 class Solution:
     def isValid(self, s: str = "{[]}") -> bool:
