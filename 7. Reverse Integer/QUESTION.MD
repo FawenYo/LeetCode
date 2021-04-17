@@ -37,27 +37,3 @@ __Example 4:__
 __Constraints:__
 
 * <code>-2<sup>31</sup> &lt;= x &lt;= 2<sup>31</sup> - 1</code>
-
-## Answer
-
-將 $x$ 轉為 string 後反轉
-
-```python
-class Solution:
-    def reverse(self, x: int) -> int:
-        input_data = str(x)
-        if "-" not in input_data:
-            # Directly reverse
-            result = input_data[::-1]
-        else:
-            # Find number part
-            number_part = input_data[1:]
-            # -reverse_number
-            result = f"-{number_part[::-1]}"
-        result = int(result)
-        if -(2 ** 31) < result < 2 ** 31 - 1:
-            return result
-        else:
-            return 0
-
-```

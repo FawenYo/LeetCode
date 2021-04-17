@@ -1,3 +1,9 @@
+import sys
+
+sys.path.append(".")
+from model import *
+
+
 # With string version
 class Solution:
     def isPalindrome(self, x: int) -> bool:

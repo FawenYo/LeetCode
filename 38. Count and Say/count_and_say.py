@@ -1,3 +1,9 @@
+import sys
+
+sys.path.append(".")
+from model import *
+
+
 class Solution:
     def countAndSay(self, n: int) -> str:
         if n == 1:

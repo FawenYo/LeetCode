@@ -1,3 +1,9 @@
+import sys
+
+sys.path.append(".")
+from model import *
+
+
 class Solution:
     def reverse(self, x: int) -> int:
         input_data = str(x)

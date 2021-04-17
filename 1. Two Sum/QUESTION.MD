@@ -40,21 +40,3 @@ __Constraints:__
 * <code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code>
 * <code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code>
 * __Only one valid answer exists.__
-
-## Answer
-
-遍歷 $nums$，看殘值是否存在於 $nums$ 中，
-
-```python
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        for index, value in enumerate(nums):
-            remain_value = target - value
-            # Search if remain_value exist in remaining list
-            if remain_value in nums[index + 1 :]:
-                # +1 for remain
-                remain_index = index + 1 + nums[index + 1 :].index(remain_value)
-                return [index, remain_index]
-        return []
-
-```

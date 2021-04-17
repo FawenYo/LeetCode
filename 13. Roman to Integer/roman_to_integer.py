@@ -1,3 +1,9 @@
+import sys
+
+sys.path.append(".")
+from model import *
+
+
 class Solution:
     def romanToInt(self, s: str) -> int:
         result = 0
