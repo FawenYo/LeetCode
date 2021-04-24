@@ -10,7 +10,7 @@ Args:
     setting.FETCH_FROM_SERVER (bool): Fetch questions of LINE group from server. Defaults to False.
     setting.SHOW_QUESTIONS (bool): Show downloaded question info. Defaults to True.
 """
-setting.QUESTIONS = ["Two Sum"]
+setting.QUESTIONS = ["Rotate Image"]
 setting.FETCH_FROM_SERVER = False
 setting.SHOW_QUESTIONS = True
 

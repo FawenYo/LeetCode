@@ -38,7 +38,6 @@ class Check:
         self.output_args_type = args[-1]
         for line_index, line_content in enumerate(infos[2::3]):
             input_values = eval(infos[2 + 3 * line_index])
-            print(input_values)
             self.translate_input_type(input_values=input_values)
             output_values = infos[2 + 3 * line_index + 1]
             output_values = self.translate_output_type(output_values=output_values)
@@ -97,7 +96,9 @@ class Check:
                 # None
                 elif self.output_args_type == "None":
                     return_output = question_input
-                    if return_output == expected_output:
+                    clone_return = copy.deepcopy(return_output)
+                    clone_expected = copy.deepcopy(expected_output)
+                    if clone_return.sort() == clone_expected.sort():
                         pass
                     else:
                         success = False
@@ -114,6 +115,23 @@ class Check:
                         console.print(":x: Wrong Answer")
                         console.print(f"Input: {input_text}")
                         console.print(f"Output: {output_text}")
+                        console.print(f"Expected: {expected_output}")
+                        break
+                # List[Any]
+                elif re.findall("List\[(.*)\]", string=self.output_args_type):
+                    clone_return = copy.deepcopy(return_output)
+                    clone_expected = copy.deepcopy(expected_output)
+                    if clone_return.sort() == clone_expected.sort():
+                        pass
+                    else:
+                        success = False
+                        input_text = ""
+                        for i in question_input:
+                            input_text += f"{i}, "
+                        input_text = input_text.strip(", ")
+                        console.print(":x: Wrong Answer")
+                        console.print(f"Input: {input_text}")
+                        console.print(f"Output: {return_output[0]}")
                         console.print(f"Expected: {expected_output}")
                         break
                 # Others
