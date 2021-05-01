@@ -146,7 +146,7 @@ class Check:
                         input_text = input_text.strip(", ")
                         console.print(":x: Wrong Answer")
                         console.print(f"Input: {input_text}")
-                        console.print(f"Output: {return_output[0]}")
+                        console.print(f"Output: {return_output}")
                         console.print(f"Expected: {expected_output}")
                         break
             except:
@@ -196,6 +196,10 @@ class Check:
         # Int
         if self.output_args_type == "int":
             return int(output_values)
+
+        # Float
+        if self.output_args_type == "float":
+            return float(output_values)
 
         # List[Any]
         output_arg = re.findall("List\[(.*)\]", string=self.output_args_type)
