@@ -11,7 +11,7 @@ Args:
     setting.SHOW_QUESTIONS (bool): Show downloaded question info. Defaults to True.
 """
 setting.QUESTIONS = ["Rotate Image"]
-setting.FETCH_FROM_SERVER = False
+setting.FETCH_FROM_SERVER = True
 setting.SHOW_QUESTIONS = True
 
 """Fetch from Server Settings
@@ -20,7 +20,7 @@ Args:
     setting.DATE (str): End date of the work. Format: "%Y-%m-%d".
     setting.OPTIONAL (bool): Fetch optional question. Defaults to True.
 """
-setting.DATE = "2021-04-25"
+setting.DATE = "2021-05-16"
 setting.OPTIONAL = True
 
 

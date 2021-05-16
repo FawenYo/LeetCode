@@ -128,4 +128,7 @@ class AutoLeetCode:
             for job in rich.progress.track(
                 jobs, description=":page_with_curl: Fetching question info..."
             ):
-                await job
+                try:
+                    await job
+                except:
+                    console.print_exception()
